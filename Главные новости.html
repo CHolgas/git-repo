@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://3dnews.ru/" />
+<title>Главные новости</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Главные новости</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/https://3dnews.ru/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=search-form</td>
+	<td>Поиск по сайту:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=search-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@id='left-sidebar']/div[3]</td>
+	<td>Новости</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=main-news</td>
+	<td>Главные новости</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=main-news</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=main-news</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.bcfirst</td>
+	<td>Главные новости</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>css=#section-header &gt; table.0.0</td>
+	<td>Главные новости</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.left.strong</td>
+	<td>Быстрый переход</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>css=#section-header &gt; table.0.0</td>
+	<td>Главные новости</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Главные новости, страница 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=← В прошлое</td>
+	<td>← В прошлое</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=← В прошлое</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=feed-to-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=feed-to-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon-arrow-up</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
